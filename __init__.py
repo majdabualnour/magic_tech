@@ -226,10 +226,11 @@ def getallorders(name):
             dectomatrix = []
         return searched_users
     elif name == 'get_done':
-        d = 0 
+        majd = 0 
         for doc in documents:
-            d+=1
+            
             if 'Done'.lower() in str(doc.to_dict()['status']).lower()  :
+                majd+=1
                 dectomatrix.append(doc.to_dict()['code'])
                 dectomatrix.append(doc.to_dict()['name'])
                 dectomatrix.append(doc.to_dict()['project_name'])
@@ -241,7 +242,7 @@ def getallorders(name):
 
                 searched_users.append(dectomatrix)
                 dectomatrix = []
-        return searched_users, d
+        return searched_users, majd
     elif name == 'waiting':
         countdo = 0 
         count = 0
@@ -252,7 +253,6 @@ def getallorders(name):
                 dectomatrix.append(doc.to_dict()['code'])
                 dectomatrix.append(doc.to_dict()['name'])
                 dectomatrix.append(doc.to_dict()['project_name'])
-                
                 dectomatrix.append(doc.to_dict()['date'])
                 dectomatrix.append(doc.to_dict()['status'])
                 dectomatrix.append(doc.to_dict()['category'])
@@ -471,8 +471,9 @@ def admins(use):
       data = session.get('dataorders')
       majd = session.get('majd')
       countd = session.get('count')
+      dd = session.get('ddd')
       collection_ref = db.collection('users')
-      
+      print(dd)
       # Get the documents in the collection
       documents = collection_ref.get()
 
@@ -482,7 +483,7 @@ def admins(use):
       visits = db.collection('visits').get()
       visit_counts = {doc.id: doc.get('count') for doc in visits}
 
-      return render_template("admin.html" , name = use, image_url = img , data = data ,visit_counts = visit_counts , waited = majd , count= countd  , counta =count)
+      return render_template("admin.html" , name = use, image_url = img , data = data ,visit_counts = visit_counts , waited = majd , count= countd  , counta =count,ddd =dd )
    else:
         return redirect(url_for('login'))
 # @app.route('/addadmin')
@@ -620,6 +621,7 @@ def login():
       else:
          imgd , user = seachnamebyemail(user)
          data,count ,countdo= getallorders('waitingh')
+         datadddd,ddd = getallorders('get_done')
          counta = getallusers('get_all')
          session['username'] = user
          session['avatar'] = imgd
@@ -627,6 +629,8 @@ def login():
          session['majd'] = count
          session['count'] = countdo
          session['counta'] = counta
+         session['ddd'] = ddd
+         print(ddd)
          return redirect(url_for('admins', use = user ))
    # else:
    #    user = request.args.get('email')
