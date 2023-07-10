@@ -704,12 +704,12 @@
               <div>
                 <a href="">
                   <div class="insta-box b-1">
-                    <img src="images/i-1.jpg" alt="">
+                    <img src="{{ url_for('static', filename='images/insta.png') }}" alt="">
                   </div>
                 </a>
                 <a href="">
                   <div class="insta-box b-2">
-                    <img src="images/i-2.jpg" alt="">
+                    <img src="images/{{ url_for('static', filename='images/insta.png') }}" alt="">
                   </div>
                 </a>
               </div>
@@ -717,24 +717,24 @@
               <div>
                 <a href="">
                   <div class="insta-box b-3">
-                    <img src="images/i-3.jpg" alt="">
+                    <img src="images/{{ url_for('static', filename='images/insta.png') }}" alt="">
                   </div>
                 </a>
                 <a href="">
                   <div class="insta-box b-4">
-                    <img src="images/i-4.jpg" alt="">
+                    <img src="images/{{ url_for('static', filename='images/insta.png') }}" alt="">
                   </div>
                 </a>
               </div>
               <div>
                 <a href="">
                   <div class="insta-box b-3">
-                    <img src="images/i-5.jpg" alt="">
+                    <img src="images/{{ url_for('static', filename='images/insta.png') }}" alt="">
                   </div>
                 </a>
                 <a href="">
                   <div class="insta-box b-4">
-                    <img src="images/i-6.jpg" alt="">
+                    <img src="images/{{ url_for('static', filename='images/insta.png') }}" alt="">
                   </div>
                 </a>
               </div>
@@ -744,7 +744,7 @@
         <div class="col-md-3">
           <div class="info_form ">
             <h5>
-              Check Calendar
+              Check Status
             </h5>
             <form action="/codeg" , method="post">
               <input type="text" name="code" placeholder="Enter your code">
