@@ -2,7 +2,9 @@
 <html>
 
 <head>
+  <link rel="icon" href="{{ url_for('static', filename='images/Logo.png') }}" type="image/x-icon"/>
   <!-- Basic -->
+  
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <!-- Mobile Metas -->
@@ -12,7 +14,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>MAGICTECH</title>
+  <title>MAGIC TECH</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css"
@@ -51,10 +53,10 @@
               <li class="nav-item ">
                 <a class="nav-link" href="/about"> About</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item  active">
                 <a class="nav-link" href="/services">services</a>
               </li>
-              <li class="nav-item  active">
+              <li class="nav-item">
                 <a class="nav-link" href="/our_projects"> our projects </a>
               </li>
               <li class="nav-item">
@@ -95,175 +97,61 @@
     <!-- end header section -->
   </div>
 
-  <!-- trending section -->
 
-  <section class="trending_section layout_padding">
-    <div id="accordion">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="detail-box">
-              <div class="heading_container">
-                <h2>
-                  OUR PROJECTS
-                </h2>
-              </div>
-              <div class="tab_container">
-                <div class="t-link-box" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                  aria-controls="collapseOne">
-                  <div class="number">
-                    <h5>
-                      01
-                    </h5>
-                  </div>
-                  <hr>
-                  <div class="t-name">
-                    <h5>
-                      Web Sites
-                    </h5>
-                  </div>
-                </div>
-                <div class="t-link-box collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                  aria-expanded="false" aria-controls="collapseTwo">
-                  <div class="number">
-                    <h5>
-                      02
-                    </h5>
-                  </div>
-                  <hr>
-                  <div class="t-name">
-                    <h5>
-                      Mobile Apps
-                    </h5>
-                  </div>
-                </div>
-                <div class="t-link-box collapsed" data-toggle="collapse" data-target="#collapseThree"
-                  aria-expanded="false" aria-controls="collapseThree">
-                  <div class="number">
-                    <h5>
-                      03
-                    </h5>
-                  </div>
-                  <hr>
-                  <div class="t-name">
-                    <h5>
-                      AI Projects
-                    </h5>
-                  </div>
-                </div>
-                <div class="t-link-box collapsed" data-toggle="collapse" data-target="#collapseFour"
-                  aria-expanded="false" aria-controls="collapseFour">
-                  <div class="number">
-                    <h5>
-                      04
-                    </h5>
-                  </div>
-                  <hr>
-                  <div class="t-name">
-                    <h5>
-                      Other projects
-                    </h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion">
-              <div class="img_container ">
-                <div class="box b-1">
-                  <div class="img-box">
-                    <img src="{{ url_for('static', filename='images/web2.png') }}" alt="">
-                  </div>
-                  <div class="img-box">
-                    <img src="{{ url_for('static', filename='images/web3.png') }}" alt="">
-                  </div>
-                </div>
-                <div class="box b-2">
-                  <div class="img-box">
-                    <img src="{{ url_for('static', filename='images/web5.png') }}" alt="">
-                  </div>
-                  <div class="img-box">
-                    <img src="{{ url_for('static', filename='images/web4.png') }}" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion">
-              <div class="img_container ">
-                <div class="box b-1">
-                  <div class="img-box">
-                    <img src="{{ url_for('static', filename='images/app1.jpg') }}" alt="">
-                  </div>
-                  <div class="img-box">
-                    <img src="{{ url_for('static', filename='images/app2.jpg') }}" alt="">
-                  </div>
-                </div>
-                <div class="box b-2">
+  <!-- brand section -->
 
-                  <div class="img-box">
-                    <img src="{{ url_for('static', filename='images/app3.jpg') }}" alt="">
-                  </div>
-                  <div class="img-box">
-                    <img src="{{ url_for('static', filename='images/app4.jpg') }}" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion">
-              <div class="img_container ">
-                <div class="box b-1">
-                  <div class="img-box">
-                    <img src="{{ url_for('static', filename='images/ai1.jpg') }}" alt="">
-                  </div>
-                  <div class="img-box">
-                    <img src="{{ url_for('static', filename='images/ai2.jpg') }}" alt="">
-                  </div>
-                </div>
-                <div class="box b-2">
-                  <div class="img-box">
-                    <img src="{{ url_for('static', filename='images/ai3.jpg') }}" alt="">
-                  </div>
-                  <div class="img-box">
-                    <img src="{{ url_for('static', filename='images/ai4.jpg') }}" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="collapse" id="collapseFour" aria-labelledby="headingfour" data-parent="#accordion">
-              <div class="img_container ">
-                <div class="box b-1">
-                  <div class="img-box">
-                    <img src="{{ url_for('static', filename='images/o1.jpg') }}" alt="">
-                  </div>
-
-                  <div class="img-box">
-                    <img src="{{ url_for('static', filename='images/o2.jpg') }}" alt="">
-                  </div>
-                </div>
-                <div class="box b-2">
-                  <div class="img-box">
-                    <img src="{{ url_for('static', filename='images/o3.jpg') }}" alt="">
-                  </div>
-                  <div class="img-box">
-                    <img src="{{ url_for('static', filename='images/o4.jpg') }}" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
+  <section class="brand_section">
+    <div class="container" style="margin-bottom: 100px;">
+      <div class="heading_container">
+        <h2>
+          Services
+        </h2>
       </div>
-    </div>
+      <div class="brand_container layout_padding2">
+        <div class="card-servse" >
+          <a href="\contact"><img src="{{ url_for('static', filename='images/appCover.png') }}" alt=""></a>
+          <h3>App Development</h3>
+          <p>
+            Intuitive and engaging apps crafted by our skilled developers,
+            delivering seamless user experiences across mobile and desktop
+            platforms.
+          </p>
+        </div>
+        <div class="card-servse" >
+         <a href="\contact"> <img src="{{ url_for('static', filename='images/webCover.jpg') }}" alt=""></a>
+          <h3>Web Development</h3>
+          <p>
+            Intuitive and engaging apps crafted by our skilled developers,
+            delivering seamless user experiences across mobile and desktop
+            platforms.
+          </p>
+        </div>
+        <div class="card-servse" >
+          <a href="\contact"><img src="{{ url_for('static', filename='images/aiCover.jpg') }}" alt=""></a>
+          <h3>Ai Development</h3>
+          <p>
+            Intuitive and engaging apps crafted by our skilled developers,
+            delivering seamless user experiences across mobile and desktop
+            platforms.
+          </p>
+        </div>
+        <div class="card-servse" >
+         <a href="\contact"><img src="{{ url_for('static', filename='images/otherCover.png') }}" alt=""></a> 
+          <h3>Other</h3>
+          <p>
+            Intuitive and engaging apps crafted by our skilled developers,
+            delivering seamless user experiences across mobile and desktop
+            platforms.
+          </p>
+        </div>
 
+    </div>
+    
   </section>
 
-  <!-- end trending section -->
-
-
-   <!-- info section -->
-   <section class="info_section layout_padding2">
+  <!-- end brand section -->
+  <!-- info section -->
+  <section class="info_section layout_padding2">
     <div class="container">
       <div class="info_logo">
         <h2>
@@ -291,15 +179,16 @@
                 <img src="{{ url_for('static', filename='images/telephone-white.png') }}" width="12px" alt="">
               </div>
               <p>
-                +01 1234567890
+                +972 567146842
               </p>
             </div>
             <div>
               <div class="img-box">
                 <img src="{{ url_for('static', filename='images/envelope-white.png') }}" width="18px" alt="">
               </div>
+            
               <p>
-                demo@gmail.com
+                magic.tech.business@gmail
               </p>
             </div>
           </div>
@@ -322,39 +211,39 @@
             </h5>
             <div class="insta_container">
               <div>
-                <a href="">
+                <a href="https://instagram.com/magic.tech.instegram?igshid=NGExMmI2YTkyZg==">
                   <div class="insta-box b-1">
-                    <img src="images/i-1.jpg" alt="">
+                    <img src="{{ url_for('static', filename='images/insta.png') }}" alt="">
                   </div>
                 </a>
-                <a href="">
+                <a href="https://instagram.com/magic.tech.instegram?igshid=NGExMmI2YTkyZg==">
                   <div class="insta-box b-2">
-                    <img src="images/i-2.jpg" alt="">
+                    <img src="{{ url_for('static', filename='images/insta1.png') }}" alt="">
                   </div>
                 </a>
               </div>
 
               <div>
-                <a href="">
+                <a href="https://instagram.com/magic.tech.instegram?igshid=NGExMmI2YTkyZg==">
                   <div class="insta-box b-3">
-                    <img src="images/i-3.jpg" alt="">
+                    <img src="{{ url_for('static', filename='images/insta2.png') }}" alt="">
                   </div>
                 </a>
-                <a href="">
+                <a href="https://instagram.com/magic.tech.instegram?igshid=NGExMmI2YTkyZg==">
                   <div class="insta-box b-4">
-                    <img src="images/i-4.jpg" alt="">
+                    <img src="{{ url_for('static', filename='images/insta3.jpg') }}" alt="">
                   </div>
                 </a>
               </div>
               <div>
-                <a href="">
+                <a href="https://instagram.com/magic.tech.instegram?igshid=NGExMmI2YTkyZg==">
                   <div class="insta-box b-3">
-                    <img src="images/i-5.jpg" alt="">
+                    <img src="{{ url_for('static', filename='images/insta4.jpg') }}" alt="">
                   </div>
                 </a>
-                <a href="">
+                <a href="https://instagram.com/magic.tech.instegram?igshid=NGExMmI2YTkyZg==">
                   <div class="insta-box b-4">
-                    <img src="images/i-6.jpg" alt="">
+                    <img src="{{ url_for('static', filename='images/insta5.jpg') }}" alt="">
                   </div>
                 </a>
               </div>
@@ -364,7 +253,7 @@
         <div class="col-md-3">
           <div class="info_form ">
             <h5>
-              Check Calendar
+              Check Status
             </h5>
             <form action="/codeg" , method="post">
               <input type="text" name="code" placeholder="Enter your code">
@@ -395,7 +284,9 @@
   <!-- end info_section -->
 
 
-  
+  <!-- footer section -->
+
+  <!-- end  footer section -->
 
 
   <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>

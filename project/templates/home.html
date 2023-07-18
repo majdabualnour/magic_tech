@@ -4,7 +4,8 @@
 <head>
   <!-- Basic -->
   <meta charset="utf-8">
-  <title>Dynamic Calendar JavaScript | CodingNepal</title>
+  <link rel="icon" href="{{ url_for('static', filename='images/Logo.png') }}" type="image/x-icon"/>
+
   <link rel="stylesheet" href="{{ url_for('static', filename='css/stylea.css') }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Google Font Link for Icons -->
@@ -19,7 +20,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>MAGICTECH</title>
+  <title>MAGIC TECH</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css"
@@ -487,85 +488,62 @@
   <!-- end discount section -->
 
   <!-- brand section -->
-
   <section class="brand_section">
-    <div class="container">
+    <div class="container" style="margin-bottom: 100px;">
       <div class="heading_container">
         <h2>
           Services
         </h2>
       </div>
       <div class="brand_container layout_padding2">
-        <div class="box">
-          <a href="contact">
-            <!-- <div class="new">
-              <h5>
-                New
-              </h5>
-            </div> -->
-            <div class="img-box">
-              <img src="{{ url_for('static', filename='images/web3.png') }}" alt="">
-            </div>
-            <div class="detail-box">
 
-              <h6>
-                Web Sites
-              </h6>
-            </div>
-          </a>
+        <div class="card-servse" >
+               <a href="\contact">   <img src="{{ url_for('static', filename='images/appCover.png') }}" alt=""></a>
+          <h3>App Development</h3>
+          <p>
+            Intuitive and engaging apps crafted by our skilled developers,
+            delivering seamless user experiences across mobile and desktop
+            platforms.
+          </p>
         </div>
-        <div class="box">
-          <a href="contact">
-            <div class="img-box">
-              <img src="{{ url_for('static', filename='images/app3.jpg') }}" alt="">
-            </div>
-            <div class="detail-box">
+        
+        <div class="card-servse" >
+          <a href="\contact"><img src="{{ url_for('static', filename='images/webCover.jpg') }}" alt=""></a>
+          <h3>Web Development</h3>
+          <p>
+            Intuitive and engaging apps crafted by our skilled developers,
+            delivering seamless user experiences across mobile and desktop
+            platforms.
+          </p>
+        </div>
+       
+        <div class="card-servse" >
+         <a href="\contact">  <img src="{{ url_for('static', filename='images/aiCover.jpg') }}" alt=""></a>
+          <h3>Ai Development</h3>
+          <p>
+            Intuitive and engaging apps crafted by our skilled developers,
+            delivering seamless user experiences across mobile and desktop
+            platforms.
+          </p>
+        </div>
+       
+        <div class="card-servse" >
+          <a href="\contact"> <img src="{{ url_for('static', filename='images/otherCover.png') }}" alt=""></a>
+          <h3>Other</h3>
+          <p>
+            Intuitive and engaging apps crafted by our skilled developers,
+            delivering seamless user experiences across mobile and desktop
+            platforms.
+          </p>
+        </div>
 
-              <h6>
-                Mobile Apps
-              </h6>
-            </div>
-          </a>
-        </div>
-        <div class="box">
-          <a href="contact">
-            <div class="img-box">
-              <img src="{{ url_for('static', filename='images/ai1.jpg') }}" alt="">
-            </div>
-            <div class="detail-box">
-
-              <h6>
-                AI
-              </h6>
-            </div>
-          </a>
-        </div>
-        <div class="box">
-          <a href="contact">
-            <div class="img-box">
-              <img src="{{ url_for('static', filename='images/o4.jpg') }}" alt="">
-            </div>
-            <div class="detail-box">
-
-              <h6>
-                Other
-              </h6>
-            </div>
-          </a>
-        </div>
-      </div>
-      <a href="/services" class="brand-btn">
-        See More
-      </a>
     </div>
+    
   </section>
-
   <!-- end brand section -->
   <!-- contact section -->
 
-  <section class="contact_section layout_padding">
 
-  </section>
 
   <!-- end contact section -->
 
@@ -583,9 +561,7 @@
       <div class="client_container layout_padding2">
         <div class="client_box b-1">
           <div class="client-id">
-            <div class="img-box">
-              <img src="{{ url_for('static', filename='images/client-1.png') }}" alt="" />
-            </div>
+           
             <div class="name">
               <h5>
                 Aaa_shrud
@@ -610,9 +586,7 @@
         </div>
         <div class="client_box b-2">
           <div class="client-id">
-            <div class="img-box">
-              <img src="{{ url_for('static', filename='images/client-1.png') }}" alt="" />
-            </div>
+         
             <div class="name">
               <h5>
                 abu_malek

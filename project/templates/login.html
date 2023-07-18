@@ -4,8 +4,9 @@
 <head>
   <!-- Basic -->
   <meta charset="utf-8">
-  <title>Dynamic Calendar JavaScript | CodingNepal</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/stylea.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='images/Logo.png') }}" type="image/x-icon"/>
+
+  <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Google Font Link for Icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
@@ -18,8 +19,7 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-
-  <title>MAGICTECH</title>
+  <title>MAGIC TECH</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css"
@@ -34,78 +34,12 @@
   <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
   <!-- responsive style -->
   <link href="{{ url_for('static', filename='css/responsive.css') }}" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-  <style>
-    /* Modern input field styling */
-    .input-container {
-      position: relative;
-      display: inline-block;
-    }
-
-    /* Apply the same styles as the input */
-    select {
-      width: 100%;
-  border: none;
-  height: 50px;
-  
-  margin-bottom: 25px;
-  padding-left: 25px;
-  background-color: transparent;
-  outline: none;
-  color: #7e7e7e;
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16);
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16);
-      font-family: 'Open Sans', sans-serif;
-      color: #0c0c0c;
-      background-color: #ffffff;
-
-    }
-    .input-container input[type=datetime-local],
-    .input-container input[type=date] {
-      padding: 10px;
-      font-size: 16px;
-      border: none;
-      border-radius: 4px;
-      background-color: #f1f1f1;
-      width: 200px;
-    }
-
-    .input-container input[type=datetime-local]:focus,
-    .input-container input[type=date]:focus {
-      outline: none;
-      box-shadow: 0 0 5px #6e81ff;
-      background-color: #ffffff;
-    }
-
-    .input-container .icon {
-      position: absolute;
-      top: 50%;
-      right: 10px;
-      transform: translateY(-50%);
-      pointer-events: none;
-    }
-
-    /* Modern submit button styling */
-    input[type=submit] {
-      padding: 10px 20px;
-      font-size: 16px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    input[type=submit]:hover {
-      background-color: #45a049;
-    }
-  </style>
 </head>
 
 <body class="sub_page">
   <div class="hero_area">
-     <!-- header section strats -->
-     <header class="header_section">
+    <!-- header section strats -->
+    <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container">
           <a class="navbar-brand" href="/">
@@ -121,7 +55,7 @@
               <li class="nav-item ">
                 <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item ">
                 <a class="nav-link" href="/about"> About</a>
               </li>
               <li class="nav-item">
@@ -130,7 +64,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="/our_projects"> our projects </a>
               </li>
-              <li class="nav-item  active">
+              <li class="nav-item">
                 <a class="nav-link" href="/contact">start now</a>
               </li>
             </ul>
@@ -176,7 +110,7 @@
     <div class="container ">
       <div class="heading_container">
         <h2 class="">
-          Contact Us
+         Log In
         </h2>
       </div>
 
@@ -184,58 +118,28 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <form action="/contact" method="post">
-            <div>
-              <input type="text" name="name" placeholder="Name" />
-            </div>
-            <div>
-              <input type="email"  name='email' placeholder="Email" />
-            </div>
-            <div>
-              <input type="text" name="phone" placeholder="Phone" />
-            </div>
-            <div>
-              <input type="text" name="pname" placeholder="Project Name" />
-            </div>
-            <div>
-              <select placeholder="Catogery" id="" name="cat" style="margin-bottom: 25px;">
-                <option value="Website">Website</option>
-                <option value="Mobile_Apps">Mobile Apps</option>
-                <option value="AI_projects">AI projects</option>
-                <option value="other">other</option>
-              </select>
-            </div> 
-
-            <div>
-              <input type="text" class="message-box" name="idea" placeholder="Your Ideas"/>
-            </div>
-            <div>
-              <label for="">Meeting date : </label>
-              <input type="datetime-local" id="datetime" name="datetime">
-            </div>
-            <div>
-              <label for="">Dead line :</label>
-              <input type="date" id="date" name="date">
-            </div>
-            <!-- <div class="input-container">
-              <input type="datetime-local" id="datetime" name="datetime">
-
+          <form action="login" method = "post">
+            <!-- <div>
+              <input type="text" placeholder="Name" />
             </div> -->
-
+            <div>
+              <input type="email" name="email" placeholder="Email" />
+            </div>
+             <div>
+              <input type="password" name="pass" placeholder="Password" />
+            </div> 
+            <!-- <div>
+              <input type="text" class="message-box" placeholder="Message" />
+            </div> -->
             <div class="d-flex ">
               <button>
-                SEND
+                log in
               </button>
             </div>
           </form>
         </div>
-        <div class="col-md-6">
-          <!-- <div class="img-box">
-            <img src="{{ url_for('static', filename='images/pic2.png') }}" width="100%"  alt="">
-          </div> -->
-        </div>
+        
       </div>
-
     </div>
   </section>
 
@@ -272,15 +176,16 @@
                 <img src="{{ url_for('static', filename='images/telephone-white.png') }}" width="12px" alt="">
               </div>
               <p>
-                +01 1234567890
+                +972 567146842
               </p>
             </div>
             <div>
               <div class="img-box">
                 <img src="{{ url_for('static', filename='images/envelope-white.png') }}" width="18px" alt="">
               </div>
+            
               <p>
-                demo@gmail.com
+                magic.tech.business@gmail
               </p>
             </div>
           </div>
@@ -303,39 +208,39 @@
             </h5>
             <div class="insta_container">
               <div>
-                <a href="">
+                <a href="https://instagram.com/magic.tech.instegram?igshid=NGExMmI2YTkyZg==">
                   <div class="insta-box b-1">
-                    <img src="images/i-1.jpg" alt="">
+                    <img src="{{ url_for('static', filename='images/insta.png') }}" alt="">
                   </div>
                 </a>
-                <a href="">
+                <a href="https://instagram.com/magic.tech.instegram?igshid=NGExMmI2YTkyZg==">
                   <div class="insta-box b-2">
-                    <img src="images/i-2.jpg" alt="">
+                    <img src="{{ url_for('static', filename='images/insta1.png') }}" alt="">
                   </div>
                 </a>
               </div>
 
               <div>
-                <a href="">
+                <a href="https://instagram.com/magic.tech.instegram?igshid=NGExMmI2YTkyZg==">
                   <div class="insta-box b-3">
-                    <img src="images/i-3.jpg" alt="">
+                    <img src="{{ url_for('static', filename='images/insta2.png') }}" alt="">
                   </div>
                 </a>
-                <a href="">
+                <a href="https://instagram.com/magic.tech.instegram?igshid=NGExMmI2YTkyZg==">
                   <div class="insta-box b-4">
-                    <img src="images/i-4.jpg" alt="">
+                    <img src="{{ url_for('static', filename='images/insta3.jpg') }}" alt="">
                   </div>
                 </a>
               </div>
               <div>
-                <a href="">
+                <a href="https://instagram.com/magic.tech.instegram?igshid=NGExMmI2YTkyZg==">
                   <div class="insta-box b-3">
-                    <img src="images/i-5.jpg" alt="">
+                    <img src="{{ url_for('static', filename='images/insta4.jpg') }}" alt="">
                   </div>
                 </a>
-                <a href="">
+                <a href="https://instagram.com/magic.tech.instegram?igshid=NGExMmI2YTkyZg==">
                   <div class="insta-box b-4">
-                    <img src="images/i-6.jpg" alt="">
+                    <img src="{{ url_for('static', filename='images/insta5.jpg') }}" alt="">
                   </div>
                 </a>
               </div>
@@ -345,7 +250,7 @@
         <div class="col-md-3">
           <div class="info_form ">
             <h5>
-              Check Calendar
+              Check Status
             </h5>
             <form action="/codeg" , method="post">
               <input type="text" name="code" placeholder="Enter your code">
@@ -376,7 +281,9 @@
   <!-- end info_section -->
 
 
- 
+  <!-- footer section -->
+
+  <!-- end  footer section -->
 
 
   <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
@@ -425,43 +332,7 @@
 
     })
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-  <script>
-    // Array to store disabled date and time values
-    var disabledDates = [
-    {% for d in dates %}
 
-      '{{d}}',
-
-      {% endfor %}
-    ];
-
-    flatpickr("#datetime", {
-      enableTime: true,
-      noCalendar: false,
-      dateFormat: "d/m/Y H:i",
-      time_24hr: true,
-      // Disable specific date and time values
-      disable: disabledDates,
-      // Set the time range from 12 PM (12:00) to 4 PM (16:00)
-      minTime: "12:00",
-      maxTime: "16:00",
-      // Add more options as needed
-    });
-  </script>
-  <script>
-  flatpickr("#date", {
-    // Set the date format
-    dateFormat: "d/m/Y",
-    // Enable all dates
-    disable: [
-      function(date) {
-        return false;
-      }
-    ],
-    // Add more options as needed
-  });
-</script>
 </body>
 </body>
 
