@@ -8,7 +8,42 @@ body {
   color: #0c0c0c;
   background-color: var(--white);
 }
+.card-servse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 10px 10px 15px 10px;
+  width: 250px;
+  transition: 0.4s;
+  margin: 20px;
+  cursor: pointer;
+  z-index: 3;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
 
+.card-servse img {
+  height: 170px;
+  border-radius: 0px;
+}
+
+.card-servse h3 {
+  margin: 15px 0px 3px 0px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.card-servse p {
+  margin: 0px;
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.card-servse:hover {
+  transform: scale(1.1);
+}
 .layout_padding {
   padding-top: 90px;
   padding-bottom: 90px;
