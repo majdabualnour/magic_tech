@@ -4,7 +4,8 @@
 <head>
   <!-- Basic -->
   <meta charset="utf-8">
-  
+  <link rel="icon" href="{{ url_for('static', filename='images/Logo.png') }}" type="image/x-icon"/>
+
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Google Font Link for Icons -->
@@ -18,8 +19,7 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-
-  <title>MAGICTECH</title>
+  <title>MAGIC TECH</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css"
@@ -157,14 +157,15 @@
       </div>
       <div class="row">
 
+
         <div class="col-md-3">
           <div class="info_contact">
             <h5>
-              About services
+              About Us
             </h5>
             <div>
               <div class="img-box">
-                <img src="images/location-white.png" width="18px" alt="">
+                <img src="{{ url_for('static', filename='images/location-white.png') }}" width="18px" alt="">
               </div>
               <p>
                 Palestine
@@ -172,18 +173,19 @@
             </div>
             <div>
               <div class="img-box">
-                <img src="images/telephone-white.png" width="12px" alt="">
+                <img src="{{ url_for('static', filename='images/telephone-white.png') }}" width="12px" alt="">
               </div>
               <p>
-                +01 1234567890
+                +972 567146842
               </p>
             </div>
             <div>
               <div class="img-box">
-                <img src="images/envelope-white.png" width="18px" alt="">
+                <img src="{{ url_for('static', filename='images/envelope-white.png') }}" width="18px" alt="">
               </div>
+            
               <p>
-                demo@gmail.com
+                magic.tech.business@gmail
               </p>
             </div>
           </div>
@@ -206,39 +208,39 @@
             </h5>
             <div class="insta_container">
               <div>
-                <a href="">
+                <a href="https://instagram.com/magic.tech.instegram?igshid=NGExMmI2YTkyZg==">
                   <div class="insta-box b-1">
-                    <img src="images/i-1.jpg" alt="">
+                    <img src="{{ url_for('static', filename='images/insta.png') }}" alt="">
                   </div>
                 </a>
-                <a href="">
+                <a href="https://instagram.com/magic.tech.instegram?igshid=NGExMmI2YTkyZg==">
                   <div class="insta-box b-2">
-                    <img src="images/i-2.jpg" alt="">
+                    <img src="{{ url_for('static', filename='images/insta1.png') }}" alt="">
                   </div>
                 </a>
               </div>
 
               <div>
-                <a href="">
+                <a href="https://instagram.com/magic.tech.instegram?igshid=NGExMmI2YTkyZg==">
                   <div class="insta-box b-3">
-                    <img src="images/i-3.jpg" alt="">
+                    <img src="{{ url_for('static', filename='images/insta2.png') }}" alt="">
                   </div>
                 </a>
-                <a href="">
+                <a href="https://instagram.com/magic.tech.instegram?igshid=NGExMmI2YTkyZg==">
                   <div class="insta-box b-4">
-                    <img src="images/i-4.jpg" alt="">
+                    <img src="{{ url_for('static', filename='images/insta3.jpg') }}" alt="">
                   </div>
                 </a>
               </div>
               <div>
-                <a href="">
+                <a href="https://instagram.com/magic.tech.instegram?igshid=NGExMmI2YTkyZg==">
                   <div class="insta-box b-3">
-                    <img src="images/i-5.jpg" alt="">
+                    <img src="{{ url_for('static', filename='images/insta4.jpg') }}" alt="">
                   </div>
                 </a>
-                <a href="">
+                <a href="https://instagram.com/magic.tech.instegram?igshid=NGExMmI2YTkyZg==">
                   <div class="insta-box b-4">
-                    <img src="images/i-6.jpg" alt="">
+                    <img src="{{ url_for('static', filename='images/insta5.jpg') }}" alt="">
                   </div>
                 </a>
               </div>
@@ -248,10 +250,10 @@
         <div class="col-md-3">
           <div class="info_form ">
             <h5>
-              Check Calendar
+              Check Status
             </h5>
-            <form action="">
-              <input type="email" placeholder="Enter your email">
+            <form action="/codeg" , method="post">
+              <input type="text" name="code" placeholder="Enter your code">
               <button>
                 Check
               </button>
