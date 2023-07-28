@@ -10,9 +10,6 @@ body {
 }
 .card-servse {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
   padding: 10px 10px 15px 10px;
   width: 250px;
   transition: 0.4s;
@@ -20,12 +17,21 @@ body {
   cursor: pointer;
   z-index: 3;
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
-    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  align-items: center;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-servse a {
+  width: 100%;
+  text-align: center;
 }
 
 .card-servse img {
-  height: 170px;
+  height: 160px;
   border-radius: 0px;
 }
 
@@ -33,12 +39,14 @@ body {
   margin: 15px 0px 3px 0px;
   font-weight: 600;
   font-size: 14px;
+  padding: 0px 10px;
 }
 
 .card-servse p {
   margin: 0px;
   font-size: 0.8em;
   font-weight: 400;
+  padding: 3px 10px;
 }
 
 .card-servse:hover {
@@ -97,7 +105,7 @@ body {
 /*header section*/
 .hero_area {
   height: 100vh;
-  background-image: url(../images/hero-bg.jpg);
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/magictech-a68b3.appspot.com/o/the%20site%20shiit%2Fhero-bg.jpg?alt=media&token=ae038108-0bde-4320-9476-bac95174c555);
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
@@ -111,7 +119,7 @@ body {
   right: 0;
   width: 45%;
   height: 100%;
-  background-image: url(../images/hero-side-bg.png);
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/magictech-a68b3.appspot.com/o/the%20site%20shiit%2Fhero-side-bg.png?alt=media&token=122e9eb5-729f-44b3-9f42-9512786c2618);
   background-size: cover;
 }
 
@@ -231,7 +239,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-toggler .navbar-toggler-icon {
-  background-image: url(../images/menu.png);
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/magictech-a68b3.appspot.com/o/the%20site%20shiit%2Fmenu.png?alt=media&token=5df79369-815b-473b-a394-861d2a2e6ed5);
   background-size: 50px;
   width: 30px;
   height: 30px;
